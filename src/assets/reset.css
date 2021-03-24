@@ -1,0 +1,61 @@
+body{
+    margin:0;
+    font-family: "微软雅黑";
+    line-height:1.12;
+    /* 取消双击选中文字 */
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    -khtml-user-select:none;/*早期浏览器*/
+      user-select:none;
+}
+h1,h2,h3,h4,h5,h6{margin:0;
+    /* 与父元素字号一致 */
+    font-size: 100%;
+    font-weight: normal;
+}
+p,dl,dd{
+    margin:0;
+}
+ul,ol{
+    /* 清除列表样式 */
+    list-style: none;
+    margin:0;
+    padding:0;
+
+}
+strong,b{
+    font-weight: normal;
+}
+em,i{
+    font-style: normal;
+}
+a{
+    color:#666666;
+}
+a,del{
+    text-decoration: none;
+}
+
+img{
+    /* 去除下间隙 */
+    vertical-align: middle;
+    /* 清除ie图片超链接 的蓝色边框*/
+    border-style:none;
+}
+table{
+    /* 边框合并 */
+    border-collapse: collapse;
+}
+input{
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+/* 清浮动 */
+.clearfix:after{
+    content:"";
+    display: block;
+    clear: both;
+}
