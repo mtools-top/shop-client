@@ -13,7 +13,8 @@ import '../node_modules/vant/lib/index.css'
 Vue.use(Vant);
 // 开发环境添加请求路径
 Vue.prototype.$local = 'http://localhost:3000'
-// 
+// 生产环境
+// Vue.prototype.$local = ''
 Vue.config.productionTip = false
 import store from './store'
 /* eslint-disable no-new */

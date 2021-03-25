@@ -35,6 +35,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
 import { login } from "../../utils/request";
 export default {
   data() {
@@ -54,6 +55,7 @@ export default {
           // 登陆成功,将返回数据放入本地
           sessionStorage.setItem('user',JSON.stringify(res.data.list))
           this.cancel();
+          this.acBadgeNum()
           this.$router.push('/mime')
           return;
         }
@@ -65,7 +67,10 @@ export default {
         phone: "",
         password: ""
       };
-    }
+    },
+    ...mapActions({
+      acBadgeNum:'acBadgeNum'
+    })
   }
 };
 </script>

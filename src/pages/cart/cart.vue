@@ -80,6 +80,7 @@ export default {
     del(id) {
       cartDel({ id }).then(res => {
         this.getCartList();
+        this.acBadgeNum()
       });
     },
     onSubmit() {
@@ -116,7 +117,8 @@ export default {
       });
     },
     ...mapActions({
-      acActive: "acActive"
+      acActive: "acActive",
+      acBadgeNum:'acBadgeNum'
     })
   },
   mounted() {

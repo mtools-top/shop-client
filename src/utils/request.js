@@ -29,6 +29,7 @@ axios.interceptors.response.use(res => {
 
 
 const BASE_UR = '/api';
+// const BASE_UR = '';
 
 /**
  * 获取轮播图信息(首页)
